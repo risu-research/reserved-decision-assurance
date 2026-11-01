@@ -1,0 +1,39 @@
+{
+  "by_class": {
+    "approval_then_execute": {
+      "n": 15,
+      "outcomes": {
+        "DELEGATE": 15,
+        "DENY": 0,
+        "HOLD_FOR_HUMAN": 0
+      }
+    },
+    "approval_then_human_choice": {
+      "n": 15,
+      "outcomes": {
+        "DELEGATE": 0,
+        "DENY": 15,
+        "HOLD_FOR_HUMAN": 0
+      }
+    },
+    "approval_then_resource_change": {
+      "n": 15,
+      "outcomes": {
+        "DELEGATE": 0,
+        "DENY": 0,
+        "HOLD_FOR_HUMAN": 15
+      }
+    },
+    "approval_then_revocation": {
+      "n": 15,
+      "outcomes": {
+        "DELEGATE": 0,
+        "DENY": 15,
+        "HOLD_FOR_HUMAN": 0
+      }
+    }
+  },
+  "data_type": "SCRIPTED_SIMULATED_HUMAN_SIGNOFF",
+  "limitation": "Signoff injected by trusted local test controller; no actual user identity, comprehension, or decision quality tested.",
+  "trials": 60
+}

@@ -1,0 +1,184 @@
+{
+  "data_type": "LOCAL_REEXECUTABLE_OBSERVATIONS",
+  "limitations": [
+    "No external service/recipient",
+    "No signature/trusted timestamps",
+    "Local files can preexist, so hash is not causal attribution",
+    "No human subjects or evidence of comprehension"
+  ],
+  "outcomes": {
+    "fabricated_external_delivery_claim": {
+      "reason": "STALE_TAMPERED_OR_DIFFERENT_EVIDENCE",
+      "valid_for_current_local_observation": false
+    },
+    "local_file_digest_contradicted": {
+      "actual_human_understanding": "OUT_OF_SCOPE",
+      "authority_at_dispatch": "VALID_AT_DISPATCH",
+      "external_delivery": "OUT_OF_SCOPE",
+      "local_file_effect": "CONTRADICTED_FILE_CONTENT",
+      "local_human_signoff_record": "NOT_RECORDED",
+      "normative_basis": "INSTRUMENTAL",
+      "reserved_choice_at_dispatch": "PRESERVED_AT_DISPATCH",
+      "sqlite_effect": "VERIFIED_SQLITE_TRANSITION",
+      "trusted_local_ledger": true
+    },
+    "local_file_digest_verified": {
+      "actual_human_understanding": "OUT_OF_SCOPE",
+      "authority_at_dispatch": "VALID_AT_DISPATCH",
+      "external_delivery": "OUT_OF_SCOPE",
+      "local_file_effect": "VERIFIED_LOCAL_BYTES",
+      "local_human_signoff_record": "NOT_RECORDED",
+      "normative_basis": "INSTRUMENTAL",
+      "reserved_choice_at_dispatch": "PRESERVED_AT_DISPATCH",
+      "sqlite_effect": "VERIFIED_SQLITE_TRANSITION",
+      "trusted_local_ledger": true
+    },
+    "prior_receipt_after_changed_file": {
+      "reason": "STALE_TAMPERED_OR_DIFFERENT_EVIDENCE",
+      "valid_for_current_local_observation": false
+    },
+    "sql_committed_file_absent": {
+      "actual_human_understanding": "OUT_OF_SCOPE",
+      "authority_at_dispatch": "VALID_AT_DISPATCH",
+      "external_delivery": "OUT_OF_SCOPE",
+      "local_file_effect": "UNKNOWN_FILE_ABSENT",
+      "local_human_signoff_record": "NOT_RECORDED",
+      "normative_basis": "INSTRUMENTAL",
+      "reserved_choice_at_dispatch": "PRESERVED_AT_DISPATCH",
+      "sqlite_effect": "VERIFIED_SQLITE_TRANSITION",
+      "trusted_local_ledger": true
+    }
+  },
+  "receipt_examples": {
+    "contradicted": {
+      "claims": {
+        "actual_human_understanding": "OUT_OF_SCOPE",
+        "authority_at_dispatch": "VALID_AT_DISPATCH",
+        "external_delivery": "OUT_OF_SCOPE",
+        "local_file_effect": "CONTRADICTED_FILE_CONTENT",
+        "local_human_signoff_record": "NOT_RECORDED",
+        "normative_basis": "INSTRUMENTAL",
+        "reserved_choice_at_dispatch": "PRESERVED_AT_DISPATCH",
+        "sqlite_effect": "VERIFIED_SQLITE_TRANSITION",
+        "trusted_local_ledger": true
+      },
+      "evidence": {
+        "observation_sources": [
+          "LOCAL_SQLITE",
+          "LOCAL_FILESYSTEM"
+        ],
+        "sqlite_snapshot_sha256": "de395715e50b16c1e0785ee52572c1517883264b65f2fb55b1a48e5378e4151c"
+      },
+      "profile": "reserved-decision-assurance/0.5",
+      "receipt_sha256": "309e5986a09e452642ccfe2ed06c384f73075bb4f65873eaf7f34c3bce1ba814",
+      "scope_note": "Recomputed local observation, not a signature, external receipt, or legal endorsement.",
+      "spec": {
+        "authority_source": "LOCAL_SQLITE_CONTRACT",
+        "claim_boundary": [
+          "SQLITE_JOB_TRANSITION",
+          "LOCAL_FILE_BYTES"
+        ],
+        "contract_id": "c",
+        "effect_kind": "LOCAL_FILE",
+        "expected_sha256": "2abd6c21d279fde8817e39e062d26b17f261354a4890df597478e9ef7755fe03",
+        "human_right_basis": "INSTRUMENTAL",
+        "job_id": "j",
+        "out_of_scope": [
+          "REAL_WORLD_AGENT_SAFETY",
+          "EXTERNAL_DELIVERY",
+          "LEGAL_VALIDITY",
+          "ACTUAL_HUMAN_COMPREHENSION"
+        ],
+        "schema": "reserved-decision-assurance/0.5"
+      },
+      "subject": "j"
+    },
+    "missing": {
+      "claims": {
+        "actual_human_understanding": "OUT_OF_SCOPE",
+        "authority_at_dispatch": "VALID_AT_DISPATCH",
+        "external_delivery": "OUT_OF_SCOPE",
+        "local_file_effect": "UNKNOWN_FILE_ABSENT",
+        "local_human_signoff_record": "NOT_RECORDED",
+        "normative_basis": "INSTRUMENTAL",
+        "reserved_choice_at_dispatch": "PRESERVED_AT_DISPATCH",
+        "sqlite_effect": "VERIFIED_SQLITE_TRANSITION",
+        "trusted_local_ledger": true
+      },
+      "evidence": {
+        "observation_sources": [
+          "LOCAL_SQLITE",
+          "LOCAL_FILESYSTEM"
+        ],
+        "sqlite_snapshot_sha256": "de395715e50b16c1e0785ee52572c1517883264b65f2fb55b1a48e5378e4151c"
+      },
+      "profile": "reserved-decision-assurance/0.5",
+      "receipt_sha256": "f0f997362b55c3d1a1327a517ee92ee562cb6678c8563d9a188b03c5155c22ac",
+      "scope_note": "Recomputed local observation, not a signature, external receipt, or legal endorsement.",
+      "spec": {
+        "authority_source": "LOCAL_SQLITE_CONTRACT",
+        "claim_boundary": [
+          "SQLITE_JOB_TRANSITION",
+          "LOCAL_FILE_BYTES"
+        ],
+        "contract_id": "c",
+        "effect_kind": "LOCAL_FILE",
+        "expected_sha256": "2abd6c21d279fde8817e39e062d26b17f261354a4890df597478e9ef7755fe03",
+        "human_right_basis": "INSTRUMENTAL",
+        "job_id": "j",
+        "out_of_scope": [
+          "REAL_WORLD_AGENT_SAFETY",
+          "EXTERNAL_DELIVERY",
+          "LEGAL_VALIDITY",
+          "ACTUAL_HUMAN_COMPREHENSION"
+        ],
+        "schema": "reserved-decision-assurance/0.5"
+      },
+      "subject": "j"
+    },
+    "present": {
+      "claims": {
+        "actual_human_understanding": "OUT_OF_SCOPE",
+        "authority_at_dispatch": "VALID_AT_DISPATCH",
+        "external_delivery": "OUT_OF_SCOPE",
+        "local_file_effect": "VERIFIED_LOCAL_BYTES",
+        "local_human_signoff_record": "NOT_RECORDED",
+        "normative_basis": "INSTRUMENTAL",
+        "reserved_choice_at_dispatch": "PRESERVED_AT_DISPATCH",
+        "sqlite_effect": "VERIFIED_SQLITE_TRANSITION",
+        "trusted_local_ledger": true
+      },
+      "evidence": {
+        "observation_sources": [
+          "LOCAL_SQLITE",
+          "LOCAL_FILESYSTEM"
+        ],
+        "sqlite_snapshot_sha256": "de395715e50b16c1e0785ee52572c1517883264b65f2fb55b1a48e5378e4151c"
+      },
+      "profile": "reserved-decision-assurance/0.5",
+      "receipt_sha256": "3c4465acfb2e9e1c94de43c86c36a45dd9e1747d7d485dd338e7d8e51de3b583",
+      "scope_note": "Recomputed local observation, not a signature, external receipt, or legal endorsement.",
+      "spec": {
+        "authority_source": "LOCAL_SQLITE_CONTRACT",
+        "claim_boundary": [
+          "SQLITE_JOB_TRANSITION",
+          "LOCAL_FILE_BYTES"
+        ],
+        "contract_id": "c",
+        "effect_kind": "LOCAL_FILE",
+        "expected_sha256": "2abd6c21d279fde8817e39e062d26b17f261354a4890df597478e9ef7755fe03",
+        "human_right_basis": "INSTRUMENTAL",
+        "job_id": "j",
+        "out_of_scope": [
+          "REAL_WORLD_AGENT_SAFETY",
+          "EXTERNAL_DELIVERY",
+          "LEGAL_VALIDITY",
+          "ACTUAL_HUMAN_COMPREHENSION"
+        ],
+        "schema": "reserved-decision-assurance/0.5"
+      },
+      "subject": "j"
+    }
+  },
+  "schema": "reserved-decision-assurance/0.5"
+}

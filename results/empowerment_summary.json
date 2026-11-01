@@ -1,0 +1,40 @@
+{
+  "data_type": "CONSTRUCTED_DETERMINISTIC_TESTS",
+  "note": "No actual humans, model, external effect, or statistical generalization.",
+  "per_policy": {
+    "admission_only": {
+      "blanket_review_of_still_authorized_pending_actions": 150,
+      "denied": 0,
+      "executed": 210,
+      "held_for_human": 0,
+      "human_exclusive_wrongly_executed": 60,
+      "right_lost": 30,
+      "selective_review_requests": 0,
+      "stale_authorization_executed": 60
+    },
+    "dispatch_guard": {
+      "blanket_review_of_still_authorized_pending_actions": 150,
+      "denied": 90,
+      "executed": 120,
+      "held_for_human": 0,
+      "human_exclusive_wrongly_executed": 60,
+      "right_lost": 0,
+      "selective_review_requests": 0,
+      "stale_authorization_executed": 0
+    },
+    "rights_assurance": {
+      "blanket_review_of_still_authorized_pending_actions": 150,
+      "denied": 60,
+      "executed": 60,
+      "held_for_human": 90,
+      "human_exclusive_wrongly_executed": 0,
+      "right_lost": 0,
+      "selective_review_requests": 90,
+      "stale_authorization_executed": 0
+    }
+  },
+  "schema": "human-empowerment-experiment/0.5",
+  "strong_global_equivalent": "SAME_RULES_AND_INPUTS_IMPLY_IDENTICAL_OUTCOMES",
+  "total_policy_executions": 630,
+  "total_scenarios": 210
+}

@@ -1,0 +1,23 @@
+name: Offline human-decision-right verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Unit and process tests
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce human empowerment policy comparison
+        run: python run_empowerment_study.py
+      - name: Reproduce simulated local signoff trials
+        run: python run_signoff_study.py
+      - name: Reproduce scoped effect evidence
+        run: python run_evidence_probes.py
